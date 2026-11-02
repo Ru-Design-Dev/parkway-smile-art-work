@@ -12,8 +12,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 0; }
-body { margin: 0; background: var(--paper); overflow-x: hidden; }
+html { scroll-behavior: smooth; scroll-padding-top: 0; overflow-x: clip; }
+body { width: 100%; max-width: 100%; margin: 0; background: var(--paper); overflow-x: clip; }
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 
@@ -86,6 +86,8 @@ a { color: inherit; }
 }
 @media (max-width: 760px) {
   :root { --nav-height: 54px; }
+  html, body, main { width: 100%; max-width: 100%; overflow-x: clip; }
+  .home, .details, .pricing { max-width: 100%; }
   .site-header { inset-block-start: 14px; }
   .nav-pill { width: min(330px, calc(100vw - 28px)); min-height: 62px; padding: 10px; }
   .nav-link { min-height: 40px; font-size: 14px; line-height: 20px; }
