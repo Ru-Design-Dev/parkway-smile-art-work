@@ -17,6 +17,7 @@
       <nav class="nav-pill">
         <a class="nav-link is-active" href="#home" data-section="home">Home</a>
         <a class="nav-link" href="#details" data-section="details">Details</a>
+        <a class="nav-link" href="#pricing" data-section="pricing">Pricing</a>
       </nav>
     </header>
 
@@ -24,14 +25,13 @@
       <section class="home" id="home" aria-label="The Parkway Smile artwork">
         <div class="home-sticky">
           <a class="brand" href="#home" aria-label="Parkway Smiles Dentistry home">
-            <svg class="brand-mark" viewBox="0 0 48 54" aria-hidden="true">
-              <path d="M24 7c-6-5-17-5-19 5-2 8 4 15 5 23 1 7 2 15 7 15 4 0 4-13 8-13s4 13 8 13c5 0 6-8 7-15 1-8 7-15 5-23C43 2 31 2 24 7Z" fill="#70c6c7" stroke="#222" stroke-width="2.4" />
-              <path d="M29 27h10m-10 5h9m-8 5h7m-6 5h5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
-            </svg>
-            <span class="brand-type"><strong>PARKWAY <em>SMILES</em></strong><b>DENTISTRY</b></span>
+            <img class="brand-logo" src="public/assets/logo.png" alt="Parkway Smiles Dentistry" />
           </a>
-          <div class="artwork-stage" aria-label="Framed painting of a swan family on a lake">
-            <img class="artwork" src="public/assets/Art Work.png" alt="Ornate framed painting of a swan and cygnets on a sunlit lake" />
+          <div class="hero-scene">
+            <div class="artwork-stage" aria-label="Framed painting of a swan family on a lake">
+              <img class="artwork" src="public/assets/Art Work.png" alt="Ornate framed painting of a swan and cygnets on a sunlit lake" />
+              <video class="artwork-motion" src="public/assets/swan-video.mp4" poster="public/assets/Art Work.png" preload="metadata" muted playsinline loop aria-hidden="true"></video>
+            </div>
             <img class="couch" src="public/assets/Couch.png" alt="" aria-hidden="true" />
           </div>
           <p class="scroll-cue"><span></span>Scroll to explore</p>
@@ -40,26 +40,69 @@
 
       <section class="details" id="details" aria-labelledby="details-title">
         <div class="details-heading">
-          <p class="eyebrow">A closer look</p>
-          <h1 id="details-title">Story within the story</h1>
-          <p class="details-intro">A quiet moment on the water, filled with little things to discover.</p>
+          <h1 id="details-title">Stories within story</h1>
         </div>
         <div class="detail-grid">
           <figure class="detail-image detail-main"><img src="public/assets/Detail Shot 1.png" alt="A swan leading her cygnets across the lake" loading="lazy" /></figure>
-          <figure class="detail-image detail-wide"><img src="public/assets/Detail Shot 2.png" alt="Golden sunrise over the misty lake" loading="lazy" /></figure>
-          <figure class="detail-image detail-small"><img src="public/assets/Detail Shot 3.png" alt="A butterfly over a sunlit pink water lily" loading="lazy" /></figure>
-          <figure class="detail-image detail-small"><img src="public/assets/Detail Shot 4.png" alt="Water lilies and a tiny visitor among the flowers" loading="lazy" /></figure>
+          <div class="detail-side">
+            <figure class="detail-image detail-wide"><img src="public/assets/Detail Shot 2.png" alt="Golden sunrise over the misty lake" loading="lazy" /></figure>
+            <div class="detail-pair">
+              <figure class="detail-image detail-small"><img src="public/assets/Detail Shot 3.png" alt="A butterfly over a sunlit pink water lily" loading="lazy" /></figure>
+              <figure class="detail-image detail-small"><img src="public/assets/Detail Shot 4.png" alt="Water lilies and a tiny visitor among the flowers" loading="lazy" /></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+        <h2 id="pricing-title">Pricing</h2>
+        <div class="pricing-grid">
+          <article class="price-card price-card-small">
+            <div class="price-artwork"><img src="public/assets/Art Work.png" alt="" /></div>
+            <img class="price-couch" src="public/assets/Couch.png" alt="" />
+            <div class="price-content">
+              <p class="price"><span>$1500</span> <sup>CAD</sup></p>
+              <p class="included">Included</p>
+              <ul>
+                <li>Size - 32” x 32”</li>
+                <li>Oil paint on Dibond Aluminum panel (Aluminum Composite Material (ACM))</li>
+                <li>QR video play</li>
+              </ul>
+            </div>
+          </article>
+          <article class="price-card">
+            <div class="price-artwork"><img src="public/assets/Art Work.png" alt="" /></div>
+            <img class="price-couch" src="public/assets/Couch.png" alt="" />
+            <div class="price-content">
+              <p class="price"><span>$2500</span> <sup>CAD</sup></p>
+              <p class="included">Included</p>
+              <ul>
+                <li>Size - 4 feet by 4 feet</li>
+                <li>Oil paint on Dibond Aluminum panel (Aluminum Composite Material (ACM))</li>
+                <li>QR video play</li>
+              </ul>
+            </div>
+          </article>
+          <article class="price-card">
+            <div class="price-artwork"><img src="public/assets/Art Work.png" alt="" /></div>
+            <img class="price-couch" src="public/assets/Couch.png" alt="" />
+            <div class="price-content">
+              <p class="price"><span>$3500</span> <sup>CAD</sup></p>
+              <p class="included">Included</p>
+              <ul>
+                <li>Size - 4 feet by 4 feet</li>
+                <li>Oil paint on Dibond Aluminum panel (Aluminum Composite Material (ACM))</li>
+                <li>QR video play</li>
+                <li>Augmented reality depth mapping</li>
+              </ul>
+            </div>
+          </article>
         </div>
         <footer class="site-footer">
-          <span>Parkway Smiles Dentistry</span>
-          <a href="#home">Back to the artwork ↑</a>
+          <a href="https://www.rusirupolwatta.com/" target="_blank" rel="noopener noreferrer">created by Ru for parkway smile dentistry</a>
         </footer>
       </section>
     </main>
 
-    <div class="curtain-intro" aria-hidden="true">
-      <div class="curtain curtain-left"></div>
-      <div class="curtain curtain-right"></div>
-    </div>
   </body>
 </html>
