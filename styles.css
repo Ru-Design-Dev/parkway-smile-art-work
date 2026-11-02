@@ -37,7 +37,7 @@ a { color: inherit; }
 .artwork { position: relative; z-index: 0; width: 100%; filter: drop-shadow(0 14px 16px rgba(61,48,30,.08)); }
 .artwork-motion { position: absolute; z-index: 1; top: 15.4%; left: 15.6%; width: 68.8%; height: 68.8%; object-fit: cover; opacity: 0; pointer-events: none; transition: opacity .16s ease; }
 .couch { position: absolute; z-index: 1; top: calc(var(--hero-art-top) + var(--hero-couch-offset)); left: 50%; width: var(--hero-couch-width); transform: translateX(-50%); opacity: 1; transition: opacity .1s linear; }
-.scroll-cue { position: absolute; z-index: 2; left: clamp(20px,5vw,70px); bottom: 26px; display: flex; align-items: center; gap: 10px; margin: 0; color: #77736f; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; transition: opacity .2s; }
+.scroll-cue { position: absolute; z-index: 2; left: clamp(20px,5vw,70px); bottom: calc(env(safe-area-inset-bottom, 0px) + 22px); display: flex; align-items: center; gap: 10px; margin: 0; color: #77736f; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; transition: opacity .2s; }
 .scroll-cue span { display: inline-block; width: 34px; height: 1px; background: currentColor; }
 
 .details { position: relative; min-height: 100vh; padding: 178px clamp(24px, 5.8vw, 100px) 30px; }
@@ -93,7 +93,7 @@ a { color: inherit; }
   .home-sticky { min-height: 600px; }
   .brand { top: 14.5%; }
   .hero-scene { --hero-art-size: clamp(250px, 44vw, 340px); --hero-art-top: calc(30svh - 6vw); --hero-couch-offset: clamp(230px, 40.5vw, 313px); --hero-couch-width: clamp(290px, 51vw, 394px); transform-origin: 50% 50%; }
-  .scroll-cue { left: 50%; bottom: clamp(150px,28vw,210px); transform: translateX(-50%); }
+  .scroll-cue { left: 50%; transform: translateX(-50%); }
   .details { padding: 100px 18px 24px; }
   .details-heading { margin-bottom: 27px; }
   .details-heading h1 { font-size: 31px; }
